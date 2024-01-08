@@ -2,22 +2,46 @@
     src: url(assets/fonts/Pacifico-Regular.ttf);
     font-family: logo;
 }
+@font-face{
+    src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: forms;
+}
+@font-face{
+    src: url(assets/fonts/Handlee-Regular.ttf);
+    font-family: cute;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 
 body{
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-color: rgb(150, 227, 230)
 }
 #container{
     margin: auto;
     display: flex;
     align-content: center;
     gap: 2px;
-    width: 750px;
+    width: 900px;
     height: 530px;
 }
 .box{
-    border-radius: 20px;
-    border: 2px black solid;
+
 }
 
 #pic{
@@ -27,6 +51,9 @@ body{
     height: 528px;
 }
 #logo{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 3em;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -34,16 +61,54 @@ body{
     top: 30%;
     height: 50px;
     width: inherit;
-    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 25px;
 }
 #logoname{
+    position: relative;
+    left: -15px;
+    transform: rotateZ(-15deg);
     font-family: logo;
 }
 
-
+h3, p, h4{
+    margin: 5px;
+}
 
 
 #form{
-    height: 528px;
-    flex-grow: 1;
+    overflow: visible;
+    height: 529px;
+    width: 600px;
+    font-family: cute;
+    font-size: 1.3em;
 }
+#formbox{
+    font-size: 0.8em;
+    font-family: forms;
+    background-color: rgba(107, 222, 230, 0.438);
+    border-top: 5px rgba(107, 222, 230, 0.685) outset;
+    border-bottom: 5px rgba(107, 222, 230, 0.685) inset;
+    box-shadow: 2px 2px 5px rgba(89, 221, 221, 0.753);
+    height: 225px;
+}
+#formcontainernames{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+#formcontainerinfo{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+#formcontainerpass{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+.containers{
+    display: flex;
+    height: 25px;
+    padding-left: 5px;
+}
+
