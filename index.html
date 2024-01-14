@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="assets/pics/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,43 +25,45 @@
         <h4>Let's get you started!</h4>
         <div class="containers" id="formcontainernames">
          <div id="fnamebox">
-            <form action="" method="get"></form>
+            <form action="" method="get">
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br><br>
+            <input style="border-radius: 8px;" type="text" id="fname" class="forminput" name="fname" required><br><br>
          </div>
          <div id="lnamebox">
-            <form action="" method="get"></form>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
+            <input style="border-radius: 8px;" type="text" id="lname" class="forminput" name="lname" required><br><br>
          </div>
          </div>
          <br><br>
         <div class="containers"  id="formcontainerinfo">
          <div>
-            <form action="" method="get"></form>
             <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email">
+            <input style="border-radius: 8px;" type="email" name="email" class="forminput" id="email" required>
          </div>
          <div>
-            <form action="" method="get"></form>
             <label for="phone">Phone number:</label><br>
-            <input type="tel" name="phone" id="phone">
+            <input style="border-radius: 8px;" type="tel" name="phone" class="forminput" id="phone">
          </div>
          </div>
          <br><br>
         <div class="containers"  id="formcontainerpass">
          <div>
-            <form action="" method="get"></form>
             <label for="password">Create a password!</label><br>
-            <input type="password" name="password" id="password">
+            <input style="border-radius: 8px;" type="password" name="password" class="forminput" id="password" required>
          </div>
          <div>
-            <form action="" method="get"></form>
             <label for="passwordcheck">Confirm password.</label><br>
-            <input type="password" name="passwordcheck" id="passwordcheck">
+            <input style="border-radius: 8px;" type="password" name="passwordcheck" class="forminput" id="passwordcheck" required>
          </div>
          </div>
     </div>
+   <div id="login">
+      <input type="submit" value="Create account" class="forminput" id="subbut">
+      <div id="logintext"><p>Already have an account?</p> 
+      <input value="Log in" id="loginbutton" type="button"> 
+   </form>
+      </div>
+   </div>
  </div>
 </div>
 <script src="script.js"></script>

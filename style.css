@@ -29,8 +29,23 @@ button {
 }
 
 
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 body{
-    background-color: rgb(150, 227, 230)
+    background-color: FF5CC9
 }
 #container{
     margin: auto;
@@ -40,15 +55,16 @@ body{
     width: 900px;
     height: 530px;
 }
-.box{
-
-}
 
 #pic{
+    margin-top: -10px;
+    border-right: 3px black solid;
+    position: relative;
+    right: 225px;
     background-image: url(assets/pics/bckgroundpic.jpeg);
     background-size: cover;
-    width: 270px;
-    height: 528px;
+    width: 450px;
+    height: 580px;
 }
 #logo{
     color: white;
@@ -65,7 +81,7 @@ body{
 }
 #logoname{
     position: relative;
-    left: -15px;
+    left: -35px;
     transform: rotateZ(-15deg);
     font-family: logo;
 }
@@ -74,21 +90,22 @@ h3, p, h4{
     margin: 5px;
 }
 
-
 #form{
+    font-size: 1.5em;
+    position: relative;
+    top: 40px;
+    right: 200px;
     overflow: visible;
     height: 529px;
     width: 600px;
     font-family: cute;
-    font-size: 1.3em;
+    font-size: 20px;
 }
 #formbox{
-    font-size: 0.8em;
+    position: relative;
+    top: 35px;
+    font-size: 1em;
     font-family: forms;
-    background-color: rgba(107, 222, 230, 0.438);
-    border-top: 5px rgba(107, 222, 230, 0.685) outset;
-    border-bottom: 5px rgba(107, 222, 230, 0.685) inset;
-    box-shadow: 2px 2px 5px rgba(89, 221, 221, 0.753);
     height: 225px;
 }
 #formcontainernames{
@@ -104,11 +121,45 @@ h3, p, h4{
 #formcontainerpass{
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    gap: 33px;
 }
 .containers{
     display: flex;
     height: 25px;
     padding-left: 5px;
 }
+#subbut{
+    border-radius: 8px;
+    height: 25px;
+    width: 165px;
+    font-family: forms;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+}
+#login{
+    position: relative;
+    top: 55px;
+    left: 3px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+#logintext{
+    font-family: forms;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+#loginbutton{
+    position: relative;
+    top: 6px;
+    height: 20px;
+    width: 55px;
+    font-size: 0.7em;
+    background-color: rgb(150, 227, 230);
+    border-radius: 8px;
+}
 
+.forminput{
+    background-color: rgb(150, 227, 230)
+}
